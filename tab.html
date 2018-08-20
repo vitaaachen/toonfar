@@ -1,0 +1,48 @@
+<script src="js/jquery.js"></script>
+
+<div class="tab-controller" id="sidebar-tab">
+    <span class="tab-fa" data-tab="sidebar01">iOS</span>
+    <span class="tab-fa" data-tab="sidebar02">Android</span>
+</div>
+<div class="tab-content" id="sidebar-tab-content">
+    <div class="tab-ch tab-ch-active" id="sidebar01">
+        <p>iOS</p>
+    </div>
+    <div class="tab-ch" id="sidebar02">
+        <p>Android</p>
+    </div>
+</div>
+
+<style>
+.tab-fa{
+    cursor: pointer;
+}
+.tab-fa-active{
+    font-weight: bold;
+    color: red;
+}
+.tab-ch{
+    display: none;
+}
+.tab-ch-active{
+    display: block;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+    /*---Tab---*/
+    $(".tab-fa").click(function(){//點擊tab-fa(tab的標題)後
+        $(".tab-fa").each(function(){
+            //把.tab-fa分別放到陣列
+            //[.tab-fa:nth-of-type(1),.tab-fa:nth-of-type(2)]
+            $(this).removeClass("tab-fa-active");
+            var TabFa = $(this).attr("data-tab");
+            $("#"+TabFa).hide();
+        })
+        $(this).addClass("tab-fa-active");
+        var TabFa = $(this).attr("data-tab");
+        $("#"+TabFa).show();
+    });
+});
+</script>
