@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Demo_fishing</title>
+    <title>Demo_live</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/gamearea.css">
     <link rel="stylesheet" href="css/listbox.css">
     <link rel="stylesheet" href="css/sticky-sidebar.css">
-    <link rel="stylesheet" href="css/fishing.css">
+    <link rel="stylesheet" href="css/live.css">
     <link rel="stylesheet" href="css/main.css?v20180101">
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
@@ -62,10 +62,10 @@
                         <li data-droplist="slot-menu">
                             <a href="slot.html">電子遊戲 <i class="fas fa-angle-down droplist-arrow"></i></a>
                         </li>
-                        <li data-droplist="live-menu">
+                        <li id="menu-active" data-droplist="live-menu">
                             <a href="live.html">真人視訊 <i class="fas fa-angle-down droplist-arrow"></i></a>
                         </li>
-                        <li id="menu-active" data-droplist="fishing-menu">
+                        <li data-droplist="fishing-menu">
                             <a href="fishing.html">捕魚對戰 <i class="fas fa-angle-down droplist-arrow"></i></a>
                         </li>
                         <li>
@@ -78,6 +78,16 @@
                             <a href="vipclub.html">VIP俱樂部</a>
                         </li>
                     </ul>
+                </div>
+                <div class="mb-menu-content">
+                    <span class="mb-btn-register">免費開戶</span>
+                    <span class="mb-btn-login">登入</span>
+                    <i class="fas fa-headset mb-btn-service"></i>
+                    <div class="mb-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
             <div class="dropdown-list" id="lottery-menu">
@@ -183,64 +193,126 @@
                 </div>
             </div>
         </div>
+        <div class="mb-menu-list-bg">
+        </div>
+        <div class="mb-menu-list">
+            <ul class="mb-list-content">
+                <li><a href="">首頁</a></li>
+                <li><a href="">優惠活動</a></li>
+                <li>彩票投注 <i class="fas fa-angle-down droplist-arrow"></i>
+                    <ul class="mb-list-drop">
+                        <li><span class="dot"></span> 彩票廳01</li>
+                        <li><span class="dot"></span> 彩票廳02</li>
+                        <li><span class="dot"></span> 彩票廳03</li>
+                    </ul>
+                </li>
+                <li>體育投注 <i class="fas fa-angle-down droplist-arrow"></i>
+                    <ul class="mb-list-drop">
+                        <li><span class="dot"></span> 體育廳01</li>
+                    </ul>
+                </li>
+                <li>真人視訊 <i class="fas fa-angle-down droplist-arrow"></i>
+                    <ul class="mb-list-drop">
+                        <li><span class="dot"></span> 真人廳01</li>
+                        <li><span class="dot"></span> 真人廳02</li>
+                    </ul>
+                </li>
+                <li>電子遊戲 <i class="fas fa-angle-down droplist-arrow"></i>
+                    <ul class="mb-list-drop">
+                        <li><span class="dot"></span> 電子廳01</li>
+                        <li><span class="dot"></span> 電子廳02</li>
+                    </ul>
+                </li>
+                <li>捕魚對戰 <i class="fas fa-angle-down droplist-arrow"></i>
+                    <ul class="mb-list-drop">
+                        <li><span class="dot"></span> 捕魚廳01</li>
+                    </ul>
+                </li>
+                <li><a href="">任務專區</a></li>
+                <li><a href="">風雲榜</a></li>
+            </ul>
+        </div>
     </div>
     <div class="sectioner">
-        <!--<div class="page-banner" style="background: lightsteelblue;height: 300px;width: 100%;">
-            <div class="container">
-                <p>頁面Banner，在什麼遊戲類別就給什麼Banner。</p>
+        <div class="page-banner" id="live-lobby">
+            <div class="container"> 
+                <div class="flex-list">
+                    <div class="flex-ch">
+                        <div class="star-live"></div>
+                        <div class="btn-star-live"></div>
+                    </div>
+                    <div class="flex-ch">
+                        <div class="star-live"></div>
+                        <div class="btn-star-live"></div>
+                    </div>
+                </div>
             </div>
-        </div>-->
-        <div class="fishing-list">
-            <div class="container">
-                <div class="fishing-box">
-                    <div class="fishing-content">
-                        <div class="fishing-hover">
-                            <div class="btn-fishing">
-                                <a href=""><p>進入遊戲</p></a>
-                            </div>
-                            <div class="btn-fishing">
-                                <a href=""><p>相關活動</p></a>    
-                            </div>
+        </div>
+        <div class="container">
+            <div class="area-live">
+                <div class="live-lobby flex-list">
+                    <div class="flex-ch live-lobby-ch live-lobby-active">歐博真人</div>
+                    <div class="flex-ch live-lobby-ch">OG真人</div>
+                    <div class="flex-ch live-lobby-ch">SA真人</div>
+                    <div class="flex-ch live-lobby-ch no-border">DG真人</div>
+                </div>
+                <div class="live-game flex-list">
+                    <div class="flex-ch live-game-ch">
+                        <div class="image">
+                            <p class="name">撲克牌</p>
                         </div>
-                        <div class="fishing-con-title">
-                            <img src="img/fishing01.png">
-                        </div>
-                        <div class="fishing-con-des">
-                            <p>Somethings</p>
+                        <div class="des">
+                            <p>文字介紹文字介紹文文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹。</p>
                         </div>
                     </div>
-                    <div class="fishing-content">
-                        <div class="fishing-hover">
-                            <div class="btn-fishing">
-                                <a href=""><p>進入遊戲</p></a>
-                            </div>
-                            <div class="btn-fishing">
-                                <a href=""><p>相關活動</p></a>    
-                            </div>
+                    <div class="flex-ch live-game-ch">
+                        <div class="image">
+                            <p class="name">撲克牌</p>
                         </div>
-                        <div class="fishing-con-title">
-                            <img src="img/fishing02.png">
-                        </div>
-                        <div class="fishing-con-des">
-                            <p>Somethings</p>
+                        <div class="des">
+                            <p>文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹。</p>
                         </div>
                     </div>
-                    <!--<div class="fishing-content">
-                        <div class="fishing-hover">
-                            <div class="btn-fishing">
-                                <a href=""><p>進入遊戲</p></a>
-                            </div>
-                            <div class="btn-fishing">
-                                <a href=""><p>相關活動</p></a>    
-                            </div>
+                    <div class="flex-ch live-game-ch">
+                        <div class="image">
+                            <p class="name">撲克牌</p>
                         </div>
-                        <div class="fishing-con-title">
-                            <p>GameName</p>
+                        <div class="des">
+                            <p>文字介紹文字介紹文文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹。</p>
                         </div>
-                        <div class="fishing-con-des">
-                            <p>Somethings</p>
+                    </div>
+                    <div class="flex-ch live-game-ch">
+                        <div class="image">
+                            <p class="name">撲克牌</p>
                         </div>
-                    </div>-->
+                        <div class="des">
+                            <p>文字介紹文字介紹文文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹。</p>
+                        </div>
+                    </div>
+                    <div class="flex-ch live-game-ch">
+                        <div class="image">
+                            <p class="name">撲克牌</p>
+                        </div>
+                        <div class="des">
+                            <p>文字介紹文字介紹文文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹。</p>
+                        </div>
+                    </div>
+                    <div class="flex-ch live-game-ch">
+                        <div class="image">
+                            <p class="name">撲克牌</p>
+                        </div>
+                        <div class="des">
+                            <p>文字介紹文字介紹文文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹。</p>
+                        </div>
+                    </div>
+                    <div class="flex-ch live-game-ch">
+                        <div class="image">
+                            <p class="name">撲克牌</p>
+                        </div>
+                        <div class="des">
+                            <p>文字介紹文字介紹文文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹。</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -305,5 +377,22 @@
             <a href="#"><img src="img/sidebar-06.png"></a>
         </div>
     </div>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        /*Hall*/
+        var swiperBanner = new Swiper('#hall', {
+            slidesPerView: 4,
+            spaceBetween: 0,
+            loop:true,
+            /*autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },*/
+            navigation: {
+                nextEl: '.hall-list .swiper-button-next',
+                prevEl: '.hall-list .swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 </html>
