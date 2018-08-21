@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Demo_fishing</title>
+    <title>Demo_Slot</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/gamearea.css">
     <link rel="stylesheet" href="css/listbox.css">
     <link rel="stylesheet" href="css/sticky-sidebar.css">
-    <link rel="stylesheet" href="css/fishing.css">
+    <link rel="stylesheet" href="css/slot.css">
     <link rel="stylesheet" href="css/main.css?v20180101">
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
@@ -59,13 +59,13 @@
                         <li data-droplist="sports-menu">
                             <a href="sports.html">體育投注 <i class="fas fa-angle-down droplist-arrow"></i></a>
                         </li>
-                        <li data-droplist="slot-menu">
+                        <li id="menu-active" data-droplist="slot-menu">
                             <a href="slot.html">電子遊戲 <i class="fas fa-angle-down droplist-arrow"></i></a>
                         </li>
                         <li data-droplist="live-menu">
                             <a href="live.html">真人視訊 <i class="fas fa-angle-down droplist-arrow"></i></a>
                         </li>
-                        <li id="menu-active" data-droplist="fishing-menu">
+                        <li data-droplist="fishing-menu">
                             <a href="fishing.html">捕魚對戰 <i class="fas fa-angle-down droplist-arrow"></i></a>
                         </li>
                         <li>
@@ -185,62 +185,226 @@
         </div>
     </div>
     <div class="sectioner">
-        <!--<div class="page-banner" style="background: lightsteelblue;height: 300px;width: 100%;">
+        <div class="page-banner" id="slot-game-banner">
             <div class="container">
-                <p>頁面Banner，在什麼遊戲類別就給什麼Banner。</p>
             </div>
-        </div>-->
-        <div class="fishing-list">
+        </div>
+        <div class="hall-list" id="slot-game-hall">
             <div class="container">
-                <div class="fishing-box">
-                    <div class="fishing-content">
-                        <div class="fishing-hover">
-                            <div class="btn-fishing">
-                                <a href=""><p>進入遊戲</p></a>
-                            </div>
-                            <div class="btn-fishing">
-                                <a href=""><p>相關活動</p></a>    
+                <div class="flex-list" id="slot-lobby-list">
+                    <div class="flex-ch slot-lobby-ch have-left-border">
+                        <p>PT老虎機</p>
+                    </div>
+                    <div class="flex-ch slot-lobby-ch">
+                        <span>SW老虎機</span>
+                    </div>
+                    <div class="flex-ch slot-lobby-ch">
+                        <span>MG老虎機</span>
+                    </div>
+                    <div class="flex-ch slot-lobby-ch">
+                        <span>DT老虎機</span>
+                    </div>
+                    <div class="flex-ch slot-lobby-ch">
+                        <span>BBIN老虎機</span>
+                    </div>
+                    <div class="flex-ch slot-lobby-ch">
+                        <span>QT老虎機</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="area">
+                <div class="areaA">
+                    <div class="gamename row7">
+                        <div class="image"></div>
+                        <span class="text">BBIN老虎機</span>
+                    </div>
+                    <div class="search row3">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="請輸入名稱">
+                        <div class="btn-submit">搜尋</div>
+                    </div>
+                </div>
+                <div class="areaB">
+                    <div class="sort-father row7">
+                        <div class="sort">
+                            <div class="name">遊戲類型</div>
+                            <div class="species">
+                                <span class="species-blue">類型1</span>
+                                <span>類型2</span>
+                                <span>類型3</span>
+                                <span>類型類4</span>
+                                <span>類型5</span>
+                                <span>類型6</span>
                             </div>
                         </div>
-                        <div class="fishing-con-title">
-                            <img src="img/fishing01.png">
+                        <div class="sort">
+                            <div class="name">遊戲風格</div>
+                            <div class="species">
+                                <span>風格1</span>
+                                <span class="species-blue">風格2</span>
+                                <span>風格3</span>
+                                <span>風格4</span>
+                                <span>風格風格5</span>
+                                <span>風格6</span>
+                                <span>風格7</span>
+                            </div>
                         </div>
-                        <div class="fishing-con-des">
-                            <p>Somethings</p>
+                        <div class="sort">
+                            <div class="name">文字文字</div>
+                            <div class="species">
+                                <span>文字1</span>
+                                <span class="species-blue">文字2</span>
+                                <span>文字文字字3</span>
+                            </div>
+                        </div>
+                        <div class="sort">
+                            <div class="name">遊戲風格</div>
+                            <div class="species">
+                                <span>風格1</span>
+                                <span>風格2</span>
+                                <span>風格3</span>
+                                <span>風格4</span>
+                                <span>風格風格5</span>
+                                <span>風格6</span>
+                                <span class="species-blue">風格7</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="fishing-content">
-                        <div class="fishing-hover">
-                            <div class="btn-fishing">
-                                <a href=""><p>進入遊戲</p></a>
-                            </div>
-                            <div class="btn-fishing">
-                                <a href=""><p>相關活動</p></a>    
+                    <div class="ad-banner row3"></div>
+                </div>
+                <div class="areaC no-border">
+                    <div class="flex-list">
+                        <div class="flex-ch">
+                            <div class="slot-box hot-slot">
+                                <div class="hot-slot-img"></div>
+                                <div class="cover">
+                                    <div class="cover-hover">
+                                        <p class="btn-white">開始遊戲</p>
+                                        <p class="btn-white">遊戲試玩</p>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <p class="slot-name">name</p>
+                                    <i class="fas fa-star myfavourite"></i>
+                                </div>
                             </div>
                         </div>
-                        <div class="fishing-con-title">
-                            <img src="img/fishing02.png">
+                        <div class="flex-ch">
+                            <div class="slot-box">
+                                <div class="cover">
+                                    <div class="cover-hover">
+                                        <p class="btn-white">開始遊戲</p>
+                                        <p class="btn-white">遊戲試玩</p>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <p class="slot-name">name</p>
+                                    <i class="fas fa-star myfavourite"></i>
+                                </div>
+                            </div>
                         </div>
-                        <div class="fishing-con-des">
-                            <p>Somethings</p>
+                        <div class="flex-ch">
+                            <div class="slot-box">
+                                <div class="cover">
+                                    <div class="cover-hover">
+                                        <p class="btn-white">開始遊戲</p>
+                                        <p class="btn-white">遊戲試玩</p>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <p class="slot-name">name</p>
+                                    <i class="fas fa-star myfavourite"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-ch">
+                            <div class="slot-box">
+                                <div class="cover">
+                                    <div class="cover-hover">
+                                        <p class="btn-white">開始遊戲</p>
+                                        <p class="btn-white">遊戲試玩</p>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <p class="slot-name">name</p>
+                                    <i class="fas fa-star myfavourite"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-ch">
+                            <div class="slot-box">
+                                <div class="cover">
+                                    <div class="cover-hover">
+                                        <p class="btn-white">開始遊戲</p>
+                                        <p class="btn-white">遊戲試玩</p>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <p class="slot-name">name</p>
+                                    <i class="fas fa-star myfavourite"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-ch">
+                            <div class="slot-box">
+                                <div class="cover">
+                                    <div class="cover-hover">
+                                        <p class="btn-white">開始遊戲</p>
+                                        <p class="btn-white">遊戲試玩</p>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <p class="slot-name">name</p>
+                                    <i class="fas fa-star myfavourite"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-ch">
+                            <div class="slot-box hot-slot">
+                                <div class="hot-slot-img"></div>
+                                <div class="cover">
+                                    <div class="cover-hover">
+                                        <p class="btn-white">開始遊戲</p>
+                                        <p class="btn-white">遊戲試玩</p>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <p class="slot-name">name</p>
+                                    <i class="fas fa-star myfavourite"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-ch">
+                            <div class="slot-box">
+                                <div class="cover">
+                                    <div class="cover-hover">
+                                        <p class="btn-white">開始遊戲</p>
+                                        <p class="btn-white">遊戲試玩</p>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <p class="slot-name">name</p>
+                                    <i class="fas fa-star myfavourite"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-ch">
+                            <div class="slot-box">
+                                <div class="cover">
+                                    <div class="cover-hover">
+                                        <p class="btn-white">開始遊戲</p>
+                                        <p class="btn-white">遊戲試玩</p>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <p class="slot-name">name</p>
+                                    <i class="fas fa-star myfavourite"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!--<div class="fishing-content">
-                        <div class="fishing-hover">
-                            <div class="btn-fishing">
-                                <a href=""><p>進入遊戲</p></a>
-                            </div>
-                            <div class="btn-fishing">
-                                <a href=""><p>相關活動</p></a>    
-                            </div>
-                        </div>
-                        <div class="fishing-con-title">
-                            <p>GameName</p>
-                        </div>
-                        <div class="fishing-con-des">
-                            <p>Somethings</p>
-                        </div>
-                    </div>-->
                 </div>
             </div>
         </div>
@@ -305,5 +469,22 @@
             <a href="#"><img src="img/sidebar-06.png"></a>
         </div>
     </div>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        /*Hall*/
+        var swiperBanner = new Swiper('#hall', {
+            slidesPerView: 4,
+            spaceBetween: 0,
+            loop:true,
+            /*autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },*/
+            navigation: {
+                nextEl: '.hall-list .swiper-button-next',
+                prevEl: '.hall-list .swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 </html>

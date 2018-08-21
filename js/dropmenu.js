@@ -1,9 +1,8 @@
 $(document).ready(function(){
 
     /*---電腦下拉選單---*/
-
+    //預設下拉選單為false，未顯示
     var isdropshow=false;
-
     $(".menu-content>ul>li").mouseenter(
         function() {
             var arrow=$(this).find(".droplist-arrow");
@@ -25,7 +24,6 @@ $(document).ready(function(){
             }
         }
     );
-
     $(".dropdown-list").mouseleave(
         function() {
             var arrow=$(this).attr("id");
@@ -36,8 +34,6 @@ $(document).ready(function(){
             isdropshow=false;
         }
     );
-
-
 
     /*---手機下拉選單---*/
     $(".mb-list-content>li").click(function() {
